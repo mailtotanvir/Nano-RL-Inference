@@ -150,7 +150,7 @@ See [reports/definition-of-done.md](reports/definition-of-done.md) for complete 
 
 ## Read and cite
 
-- Technical report: [Building a Miniature AI Factory](https://mailtotanvir.github.io/Nano-RL-Inference/papers/integrated-study/paper.pdf)
+- Technical report: [Pages PDF](https://mailtotanvir.github.io/Nano-RL-Inference/papers/integrated-study/paper.pdf) or [Zenodo PDF](https://zenodo.org/records/22886077/files/paper.pdf?download=1)
 - Project article: [The miniature AI factory](https://mailtotanvir.github.io/Nano-RL-Inference/blog/blog.html)
 - Hugging Face adapter: [nano-rl-inference-arithmetic-sft-adapter](https://huggingface.co/mailtotanvir/nano-rl-inference-arithmetic-sft-adapter)
 - Citation metadata: [CITATION.cff](CITATION.cff)
