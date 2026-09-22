@@ -1,0 +1,39 @@
+schema_version: "1.0"
+run_id: publication-evidence-v1
+base_model: Qwen/Qwen2.5-0.5B-Instruct
+seeds: [13, 42, 97]
+training_split: data/processed/arithmetic_v1/train.jsonl
+development_split: data/processed/arithmetic_v1/dev.jsonl
+test_split: data/processed/arithmetic_v1/test.jsonl
+common:
+  max_completion_tokens: 16
+  learning_rate: 1.0e-5
+  prompt_budget: 512
+  reference_policy: frozen_sft
+methods:
+  - sft
+  - reinforce
+  - ppo
+  - rloo
+  - grpo
+  - grpo_k1
+  - grpo_k3
+required_metrics:
+  - model
+  - dataset
+  - algorithm
+  - seed
+  - training_steps
+  - wall_clock_time
+  - gpu_type
+  - gpu_hours
+  - peak_gpu_memory
+  - reward
+  - evaluation_accuracy
+  - response_length
+  - token_throughput
+  - kl
+  - entropy
+  - gradient_norm
+  - loss
+  - checkpoint_path

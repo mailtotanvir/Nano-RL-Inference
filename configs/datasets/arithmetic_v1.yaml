@@ -1,0 +1,12 @@
+dataset_id: arithmetic_v1
+schema_version: "1.0"
+seed: 42
+splits:
+  train_templates: [addition, subtraction]
+  dev_templates: [multiplication]
+  test_templates: [division]
+examples_per_template: 128
+operand_range:
+  minimum: 1
+  maximum: 100
+answer_format: integer_or_reduced_fraction

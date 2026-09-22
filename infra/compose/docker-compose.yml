@@ -1,0 +1,27 @@
+services:
+  provider:
+    build:
+      context: ../..
+      dockerfile: infra/docker/provider.Dockerfile
+    environment:
+      MINI_STACK_PROVIDER_API_KEY_HASHES: ${MINI_STACK_PROVIDER_API_KEY_HASHES:-}
+    ports:
+      - "8000:8000"
+    command: ["uvicorn", "mini_stack.provider.main:app", "--host", "0.0.0.0", "--port", "8000"]
+    profiles: ["provider"]
+
+  vllm:
+    image: vllm/vllm-openai:v0.8.3
+    gpus: all
+    volumes:
+      - ${MODEL_PATH:-./artifacts/model/sft}:/model:ro
+    command: ["--model", "/model", "--served-model-name", "nano-reasoner"]
+    profiles: ["vllm"]
+
+  sglang:
+    image: lmsysorg/sglang:v0.4.4.post1-cu124
+    gpus: all
+    volumes:
+      - ${MODEL_PATH:-./artifacts/model/sft}:/model:ro
+    command: ["python3", "-m", "sglang.launch_server", "--model-path", "/model", "--host", "0.0.0.0", "--port", "30000"]
+    profiles: ["sglang"]

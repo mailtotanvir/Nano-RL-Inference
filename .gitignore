@@ -1,0 +1,41 @@
+# Bytecode and environments
+__pycache__/
+*.py[cod]
+.venv/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+infra/terraform/.terraform/
+
+# Secrets and local configuration
+.hermes/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+application_default_credentials.json
+
+# Model and package caches
+.cache/
+.huggingface/
+wandb/
+
+# Generated artifacts and large training output
+artifacts/**
+!artifacts/.gitkeep
+!artifacts/cost/.gitkeep
+!artifacts/manifests/.gitkeep
+data/processed/**
+!data/processed/.gitkeep
+checkpoints/
+checkpoint-*/
+
+# OS/editor files
+.DS_Store
+.vscode/
+.idea/
+*Zone.Identifier

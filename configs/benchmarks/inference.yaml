@@ -1,0 +1,18 @@
+schema_version: "1.0"
+model_id: nano-sft
+warmup_requests: 5
+measured_requests: 30
+workloads:
+  - name: short
+    prompt: "What is 17 + 25? Reply with only the answer."
+    max_tokens: 16
+    concurrency: [1, 4]
+  - name: medium
+    prompt: "Solve 37 * 19. Explain briefly, then give the final answer."
+    max_tokens: 64
+    concurrency: [1, 4]
+  - name: long
+    prompt: "Given the arithmetic expression (91 * 17) - (42 / 6), provide the final numeric answer."
+    max_tokens: 128
+    concurrency: [1]
+streaming: [false, true]

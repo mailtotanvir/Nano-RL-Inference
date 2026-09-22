@@ -1,0 +1,71 @@
+[build-system]
+requires = ["hatchling==1.27.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mini-ai-stack"
+version = "0.1.0"
+description = "Reproducible small-model RL laboratory and inference provider"
+readme = "README.md"
+requires-python = ">=3.11,<3.12"
+license = { text = "Apache-2.0" }
+authors = [{ name = "Tanvir" }]
+dependencies = [
+  "fastapi==0.115.12",
+  "prometheus-client==0.21.1",
+  "pydantic==2.11.3",
+  "PyYAML==6.0.2",
+]
+
+[project.optional-dependencies]
+train = [
+  "accelerate==1.5.2",
+  "datasets==3.4.1",
+  "peft==0.15.2",
+  "torch==2.6.0",
+  "transformers==4.50.3",
+  "trl==0.15.2",
+]
+serve = [
+  "httpx==0.28.1",
+  "openai==1.68.2",
+  "uvicorn[standard]==0.34.0",
+]
+dev = [
+  "detect-secrets==1.5.0",
+  "mypy==1.15.0",
+  "pip-audit==2.9.0",
+  "pytest==8.3.5",
+  "pytest-asyncio==0.25.3",
+  "ruff==0.11.2",
+  "types-PyYAML==6.0.12.20241230",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/mini_stack"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+asyncio_default_fixture_loop_scope = "function"
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.ruff.lint.per-file-ignores]
+"src/mini_stack/provider/app.py" = ["E501"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+mypy_path = "src"
+packages = ["mini_stack"]
+
+[tool.coverage.run]
+branch = true
+source = ["mini_stack"]
