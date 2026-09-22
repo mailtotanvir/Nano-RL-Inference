@@ -150,12 +150,12 @@ See [reports/definition-of-done.md](reports/definition-of-done.md) for complete 
 
 ## Read and cite
 
-- Technical report: [Pages PDF](https://mailtotanvir.github.io/Nano-RL-Inference/papers/integrated-study/paper.pdf) or [Zenodo PDF](https://zenodo.org/records/22886077/files/paper.pdf?download=1)
+- Technical report: [Pages PDF](https://mailtotanvir.github.io/Nano-RL-Inference/papers/integrated-study/paper.pdf) or [Zenodo PDF](https://zenodo.org/records/22886166/files/paper.pdf?download=1)
 - Project article: [The miniature AI factory](https://mailtotanvir.github.io/Nano-RL-Inference/blog/blog.html)
 - Hugging Face adapter: [nano-rl-inference-arithmetic-sft-adapter](https://huggingface.co/mailtotanvir/nano-rl-inference-arithmetic-sft-adapter)
 - Citation metadata: [CITATION.cff](CITATION.cff)
 - Zenodo concept DOI: [10.5281/zenodo.22886076](https://doi.org/10.5281/zenodo.22886076)
-- Zenodo version DOI for `v0.1.0`: [10.5281/zenodo.22886077](https://doi.org/10.5281/zenodo.22886077)
+- Zenodo version DOI for paper-only `v0.1.1`: [10.5281/zenodo.22886166](https://doi.org/10.5281/zenodo.22886166)
 
 ## License
 
