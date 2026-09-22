@@ -3,6 +3,8 @@
 [![License: Apache-2.0](https://img.shields.io/badge/License-Apache--2.0-0b7285.svg)](LICENSE)
 [![Paper](https://img.shields.io/badge/read-technical%20report-007C78.svg)](papers/integrated-study/paper.pdf)
 [![Evidence](https://img.shields.io/badge/evidence-three--seed%20failure%20recorded-C34545.svg)](reports/initial-training-results.md)
+[![Project article](https://img.shields.io/badge/read-project%20article-46E39B.svg)](https://mailtotanvir.github.io/Nano-RL-Inference/blog/blog.html)
+[![Model on HF](https://img.shields.io/badge/model-Hugging%20Face-FFB000.svg)](https://huggingface.co/mailtotanvir/nano-rl-inference-arithmetic-sft-adapter)
 [![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB.svg)](pyproject.toml)
 
 **A compact post-training laboratory and OpenAI-compatible inference provider for learning where policy optimization, held-out behavior, serving engines, and provider operations agree or diverge.**
@@ -147,13 +149,11 @@ See [reports/definition-of-done.md](reports/definition-of-done.md) for complete 
 
 ## Read and cite
 
-- Technical report: [Building a Miniature AI Factory](papers/integrated-study/paper.pdf)
-- Project article: published with GitHub Pages after release
-- Canonical personal article: published with the portfolio timeline update
-- Hugging Face adapter: selected after final artifact review
-- Zenodo DOI: minted from the first public GitHub release
-
-The paper, blog, model card, GitHub release, and Zenodo record will cross-link after publication. This ordering avoids publishing a DOI, model identifier, or URL before it is real.
+- Technical report: [Building a Miniature AI Factory](https://mailtotanvir.github.io/Nano-RL-Inference/papers/integrated-study/paper.pdf)
+- Project article: [The miniature AI factory](https://mailtotanvir.github.io/Nano-RL-Inference/blog/blog.html)
+- Hugging Face adapter: [nano-rl-inference-arithmetic-sft-adapter](https://huggingface.co/mailtotanvir/nano-rl-inference-arithmetic-sft-adapter)
+- Citation metadata: [CITATION.cff](CITATION.cff)
+- Zenodo DOI: minted from the first public GitHub release and added here after verification
 
 ## License
 

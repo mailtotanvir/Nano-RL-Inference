@@ -1,0 +1,24 @@
+{
+  "title": "Building a Miniature AI Factory: Post-Training, Inference Engines, and Provider Systems",
+  "description": "A reproducible compact study of supervised fine-tuning, REINFORCE, PPO, RLOO, GRPO, workload-dependent inference-engine behavior, and an OpenAI-compatible provider boundary. The release documents a three-seed, 21-cell template-disjoint evaluation in which every tested adapter scored 4/128 held out.",
+  "creators": [
+    {
+      "name": "Ahmed, Tanvir"
+    }
+  ],
+  "license": "Apache-2.0",
+  "keywords": [
+    "post-training",
+    "reinforcement learning",
+    "PEFT",
+    "LoRA",
+    "inference serving",
+    "OpenAI-compatible API",
+    "reproducibility"
+  ],
+  "upload_type": "software",
+  "publication_date": "2026-09-21",
+  "version": "0.1.0",
+  "language": "eng",
+  "access_right": "open"
+}

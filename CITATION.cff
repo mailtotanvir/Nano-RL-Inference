@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite the repository and technical report. A Zenodo DOI will be added after archival."
+title: "Building a Miniature AI Factory: Post-Training, Inference Engines, and Provider Systems"
+type: software
+version: 0.1.0
+date-released: 2026-09-21
+authors:
+  - family-names: Ahmed
+    given-names: Tanvir
+license: Apache-2.0
+repository-code: "https://github.com/mailtotanvir/Nano-RL-Inference"
+url: "https://mailtotanvir.github.io/Nano-RL-Inference/"
+abstract: "A compact reproducible study of post-training, inference engines, and provider systems with three-seed template-disjoint evaluation evidence."
+keywords:
+  - post-training
+  - reinforcement learning
+  - inference serving
+  - reproducibility
