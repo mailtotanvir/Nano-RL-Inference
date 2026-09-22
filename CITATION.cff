@@ -10,6 +10,7 @@ authors:
 license: Apache-2.0
 repository-code: "https://github.com/mailtotanvir/Nano-RL-Inference"
 url: "https://mailtotanvir.github.io/Nano-RL-Inference/"
+doi: 10.5281/zenodo.22886076
 abstract: "A compact reproducible study of post-training, inference engines, and provider systems with three-seed template-disjoint evaluation evidence."
 keywords:
   - post-training

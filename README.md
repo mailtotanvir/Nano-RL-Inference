@@ -5,6 +5,7 @@
 [![Evidence](https://img.shields.io/badge/evidence-three--seed%20failure%20recorded-C34545.svg)](reports/initial-training-results.md)
 [![Project article](https://img.shields.io/badge/read-project%20article-46E39B.svg)](https://mailtotanvir.github.io/Nano-RL-Inference/blog/blog.html)
 [![Model on HF](https://img.shields.io/badge/model-Hugging%20Face-FFB000.svg)](https://huggingface.co/mailtotanvir/nano-rl-inference-arithmetic-sft-adapter)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22886076.svg)](https://doi.org/10.5281/zenodo.22886076)
 [![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB.svg)](pyproject.toml)
 
 **A compact post-training laboratory and OpenAI-compatible inference provider for learning where policy optimization, held-out behavior, serving engines, and provider operations agree or diverge.**
@@ -153,7 +154,8 @@ See [reports/definition-of-done.md](reports/definition-of-done.md) for complete 
 - Project article: [The miniature AI factory](https://mailtotanvir.github.io/Nano-RL-Inference/blog/blog.html)
 - Hugging Face adapter: [nano-rl-inference-arithmetic-sft-adapter](https://huggingface.co/mailtotanvir/nano-rl-inference-arithmetic-sft-adapter)
 - Citation metadata: [CITATION.cff](CITATION.cff)
-- Zenodo DOI: minted from the first public GitHub release and added here after verification
+- Zenodo concept DOI: [10.5281/zenodo.22886076](https://doi.org/10.5281/zenodo.22886076)
+- Zenodo version DOI for `v0.1.0`: [10.5281/zenodo.22886077](https://doi.org/10.5281/zenodo.22886077)
 
 ## License
 
